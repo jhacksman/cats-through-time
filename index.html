@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Through Time | A 10,000 Year Journey</title>
+    <meta name="description" content="An immersive journey through humanity's relationship with cats, from ancient Egypt to the internet age.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Audio Control -->
+    <button id="audio-toggle" class="audio-btn" aria-label="Toggle ambient sound">
+        <svg class="audio-icon audio-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+        <svg class="audio-icon audio-off hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+    </button>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Navigation Dots -->
+    <nav class="nav-dots" aria-label="Section navigation">
+        <a href="#hero" class="nav-dot active" data-section="hero" aria-label="Introduction"></a>
+        <a href="#egypt" class="nav-dot" data-section="egypt" aria-label="Ancient Egypt"></a>
+        <a href="#rome" class="nav-dot" data-section="rome" aria-label="Roman Empire"></a>
+        <a href="#medieval" class="nav-dot" data-section="medieval" aria-label="Medieval Era"></a>
+        <a href="#renaissance" class="nav-dot" data-section="renaissance" aria-label="Renaissance"></a>
+        <a href="#victorian" class="nav-dot" data-section="victorian" aria-label="Victorian Era"></a>
+        <a href="#twentieth" class="nav-dot" data-section="twentieth" aria-label="20th Century"></a>
+        <a href="#internet" class="nav-dot" data-section="internet" aria-label="Internet Age"></a>
+        <a href="#today" class="nav-dot" data-section="today" aria-label="Today"></a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="parallax-bg hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle animate-fade-up">A Journey Through 10,000 Years</span>
+            <h1 class="hero-title animate-fade-up delay-1">CATS</h1>
+            <h2 class="hero-tagline animate-fade-up delay-2">Through Time</h2>
+            <p class="hero-description animate-fade-up delay-3">From divine guardians of ancient temples to beloved rulers of the internet, discover the extraordinary story of humanity's most enigmatic companions.</p>
+            <div class="scroll-indicator animate-fade-up delay-4">
+                <span>Scroll to begin</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ancient Egypt Section -->
+    <section id="egypt" class="section era-section egypt-section">
+        <div class="parallax-bg egypt-bg"></div>
+        <div class="era-overlay egypt-overlay"></div>
+        <div class="era-content">
+            <div class="era-header">
+                <span class="era-date animate-slide-left">3100 BCE - 30 BCE</span>
+                <h2 class="era-title animate-fade-up">Bastet & Ancient Egypt</h2>
+                <p class="era-subtitle animate-fade-up delay-1">When Cats Were Gods</p>
+            </div>
+            
+            <div class="era-body">
+                <div class="content-block animate-fade-up delay-2">
+                    <p class="lead-text">In the golden sands of ancient Egypt, cats ascended to divinity. They were not merely pets—they were sacred beings, protectors of the home, and living embodiments of the goddess Bastet.</p>
+                </div>
+                
+                <div class="image-grid">
+                    <figure class="grid-image large animate-slide-up delay-2">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/British_Museum_Egypt_101.jpg/800px-British_Museum_Egypt_101.jpg" alt="Ancient Egyptian bronze cat statue representing Bastet" loading="lazy">
+                        <figcaption>Bronze statue of Bastet, British Museum</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-3">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Egypte_loance_127.jpg/640px-Egypte_loance_127.jpg" alt="Egyptian cat mummy" loading="lazy">
+                        <figcaption>Cat mummy, Louvre Museum</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-4">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Egyptian_-_Statuette_of_a_Cat_-_Walters_54403_-_Three_Quarter_Right.jpg/640px-Egyptian_-_Statuette_of_a_Cat_-_Walters_54403_-_Three_Quarter_Right.jpg" alt="Egyptian cat statuette" loading="lazy">
+                        <figcaption>Cat statuette, Walters Art Museum</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="content-columns">
+                    <div class="content-column animate-fade-up delay-3">
+                        <h3>The Cult of Bastet</h3>
+                        <p>Bastet, the lioness-turned-cat goddess, represented protection, fertility, and motherhood. Her temple at Bubastis drew hundreds of thousands of pilgrims annually, making it one of the largest religious festivals in the ancient world.</p>
+                    </div>
+                    <div class="content-column animate-fade-up delay-4">
+                        <h3>Sacred Protectors</h3>
+                        <p>Cats guarded grain stores from mice and snakes, protecting Egypt's food supply. This practical role elevated them to sacred status. Killing a cat, even accidentally, was punishable by death.</p>
+                    </div>
+                </div>
+                
+                <blockquote class="era-quote animate-fade-up delay-5">
+                    <p>"When a cat dies, the household shaves their eyebrows in mourning."</p>
+                    <cite>— Herodotus, The Histories</cite>
+                </blockquote>
+                
+                <div class="stat-row animate-fade-up delay-5">
+                    <div class="stat">
+                        <span class="stat-number">300,000+</span>
+                        <span class="stat-label">Cat mummies discovered at Bubastis</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3,000</span>
+                        <span class="stat-label">Years of cat worship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roman Empire Section -->
+    <section id="rome" class="section era-section rome-section">
+        <div class="parallax-bg rome-bg"></div>
+        <div class="era-overlay rome-overlay"></div>
+        <div class="era-content">
+            <div class="era-header">
+                <span class="era-date animate-slide-left">27 BCE - 476 CE</span>
+                <h2 class="era-title animate-fade-up">The Roman Empire</h2>
+                <p class="era-subtitle animate-fade-up delay-1">Travelers of the Ancient World</p>
+            </div>
+            
+            <div class="era-body">
+                <div class="content-block animate-fade-up delay-2">
+                    <p class="lead-text">As Roman legions marched across continents, cats traveled with them. From the ports of Alexandria to the frontiers of Britannia, cats spread across the known world, trading divine status for practical partnership.</p>
+                </div>
+                
+                <div class="image-grid">
+                    <figure class="grid-image large animate-slide-up delay-2">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pompeii_-_Casa_del_Fauno_-_Mosaic_-_MAN.jpg/1024px-Pompeii_-_Casa_del_Fauno_-_Mosaic_-_MAN.jpg" alt="Roman mosaic from Pompeii" loading="lazy">
+                        <figcaption>Roman mosaic from Pompeii</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-3">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mosaic_cat_ducks_Massimo.jpg/640px-Mosaic_cat_ducks_Massimo.jpg" alt="Roman cat mosaic" loading="lazy">
+                        <figcaption>Cat hunting birds, Roman mosaic</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-4">
+                        <img data-src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800" alt="Roman architecture" loading="lazy">
+                        <figcaption>Roman Colosseum at dusk</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="content-columns">
+                    <div class="content-column animate-fade-up delay-3">
+                        <h3>Companions of Traders</h3>
+                        <p>Roman merchants recognized cats' value aboard ships, where they protected precious cargo from rats. Cats became symbols of liberty—the only animal allowed to enter Roman temples freely.</p>
+                    </div>
+                    <div class="content-column animate-fade-up delay-4">
+                        <h3>Spreading Across Europe</h3>
+                        <p>Following trade routes and military campaigns, cats established themselves throughout Europe. Roman villas featured mosaics depicting cats, evidence of their integration into daily life.</p>
+                    </div>
+                </div>
+                
+                <blockquote class="era-quote animate-fade-up delay-5">
+                    <p>"The cat is the only animal that has managed to domesticate humans."</p>
+                    <cite>— Ancient Roman proverb</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medieval Section -->
+    <section id="medieval" class="section era-section medieval-section">
+        <div class="parallax-bg medieval-bg"></div>
+        <div class="era-overlay medieval-overlay"></div>
+        <div class="era-content">
+            <div class="era-header">
+                <span class="era-date animate-slide-left">500 CE - 1500 CE</span>
+                <h2 class="era-title animate-fade-up">The Dark Ages</h2>
+                <p class="era-subtitle animate-fade-up delay-1">Persecution & Plague</p>
+            </div>
+            
+            <div class="era-body">
+                <div class="content-block animate-fade-up delay-2">
+                    <p class="lead-text">In the shadow of superstition, cats fell from grace. Associated with witchcraft and the devil, they faced centuries of persecution. The tragic irony: killing cats allowed rat populations to explode, worsening the very plagues that devastated Europe.</p>
+                </div>
+                
+                <div class="image-grid dark-grid">
+                    <figure class="grid-image large animate-slide-up delay-2">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Witches_and_cats.jpg/800px-Witches_and_cats.jpg" alt="Medieval woodcut of witches with cats" loading="lazy">
+                        <figcaption>Medieval woodcut depicting witches with cats</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-3">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/The_plague_of_Florence_in_1348%2C_as_described_in_Boccaccio%27s_Wellcome_V0010664.jpg/640px-The_plague_of_Florence_in_1348%2C_as_described_in_Boccaccio%27s_Wellcome_V0010664.jpg" alt="The Black Death in Florence" loading="lazy">
+                        <figcaption>The Black Death in Florence, 1348</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-4">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Cat_and_mouse_-_Smithfield_Decretals.jpg/640px-Cat_and_mouse_-_Smithfield_Decretals.jpg" alt="Medieval manuscript illustration of cat" loading="lazy">
+                        <figcaption>Cat illustration, Smithfield Decretals</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="content-columns">
+                    <div class="content-column animate-fade-up delay-3">
+                        <h3>The Witch Trials</h3>
+                        <p>Black cats became symbols of evil, believed to be witches' familiars or witches themselves in disguise. Pope Gregory IX's 1233 decree associated cats with devil worship, sealing their fate for centuries.</p>
+                    </div>
+                    <div class="content-column animate-fade-up delay-4">
+                        <h3>A Deadly Mistake</h3>
+                        <p>The mass killing of cats allowed rat populations to surge. When the Black Death arrived in 1347, carried by rat fleas, it found Europe defenseless. The plague killed 75-200 million people—a tragedy that fewer cats made worse.</p>
+                    </div>
+                </div>
+                
+                <blockquote class="era-quote dark-quote animate-fade-up delay-5">
+                    <p>"The cat was the devil's favorite animal and idol of all witches."</p>
+                    <cite>— Pope Gregory IX, Vox in Rama, 1233</cite>
+                </blockquote>
+                
+                <div class="stat-row animate-fade-up delay-5">
+                    <div class="stat dark-stat">
+                        <span class="stat-number">200M</span>
+                        <span class="stat-label">Lives lost to the Black Death</span>
+                    </div>
+                    <div class="stat dark-stat">
+                        <span class="stat-number">300</span>
+                        <span class="stat-label">Years of cat persecution</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Renaissance Section -->
+    <section id="renaissance" class="section era-section renaissance-section">
+        <div class="parallax-bg renaissance-bg"></div>
+        <div class="era-overlay renaissance-overlay"></div>
+        <div class="era-content">
+            <div class="era-header">
+                <span class="era-date animate-slide-left">1400 CE - 1700 CE</span>
+                <h2 class="era-title animate-fade-up">Renaissance & Redemption</h2>
+                <p class="era-subtitle animate-fade-up delay-1">The Pragmatic Alliance</p>
+            </div>
+            
+            <div class="era-body">
+                <div class="content-block animate-fade-up delay-2">
+                    <p class="lead-text">As reason began to triumph over superstition, cats slowly reclaimed their place in human society. Ship cats became essential crew members, farm cats protected harvests, and artists began to celebrate feline grace once more.</p>
+                </div>
+                
+                <div class="image-grid">
+                    <figure class="grid-image large animate-slide-up delay-2">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Annibale_Carracci_-_Two_Children_Teasing_a_Cat_-_Google_Art_Project.jpg/1024px-Annibale_Carracci_-_Two_Children_Teasing_a_Cat_-_Google_Art_Project.jpg" alt="Renaissance painting of children with cat" loading="lazy">
+                        <figcaption>Two Children Teasing a Cat, Annibale Carracci</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-3">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/800px-Meisje_met_de_parel.jpg" alt="Girl with a Pearl Earring by Vermeer" loading="lazy">
+                        <figcaption>Dutch Golden Age, Vermeer</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-4">
+                        <img data-src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800" alt="Ship at sea" loading="lazy">
+                        <figcaption>Age of Exploration</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="content-columns">
+                    <div class="content-column animate-fade-up delay-3">
+                        <h3>Ship Cats</h3>
+                        <p>Every great vessel of the Age of Exploration carried cats. They protected food stores, boosted morale, and became beloved mascots. Sailors considered it terrible luck to sail without a cat aboard.</p>
+                    </div>
+                    <div class="content-column animate-fade-up delay-4">
+                        <h3>Return to Art</h3>
+                        <p>Renaissance and Baroque artists rediscovered the cat as a subject. Leonardo da Vinci filled sketchbooks with cat studies. Cats appeared in domestic scenes, symbols of home and comfort.</p>
+                    </div>
+                </div>
+                
+                <blockquote class="era-quote animate-fade-up delay-5">
+                    <p>"The smallest feline is a masterpiece."</p>
+                    <cite>— Leonardo da Vinci</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Victorian Section -->
+    <section id="victorian" class="section era-section victorian-section">
+        <div class="parallax-bg victorian-bg"></div>
+        <div class="era-overlay victorian-overlay"></div>
+        <div class="era-content">
+            <div class="era-header">
+                <span class="era-date animate-slide-left">1837 - 1901</span>
+                <h2 class="era-title animate-fade-up">The Victorian Era</h2>
+                <p class="era-subtitle animate-fade-up delay-1">The Birth of Cat Fancy</p>
+            </div>
+            
+            <div class="era-body">
+                <div class="content-block animate-fade-up delay-2">
+                    <p class="lead-text">The Victorians transformed cats from working animals into cherished companions. The first cat shows, the birth of pedigree breeding, and a new sentimentality toward animals elevated cats to the status of beloved family members.</p>
+                </div>
+                
+                <div class="image-grid">
+                    <figure class="grid-image large animate-slide-up delay-2">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1871_Crystal_Palace_cat_show.jpg/1024px-1871_Crystal_Palace_cat_show.jpg" alt="First cat show at Crystal Palace 1871" loading="lazy">
+                        <figcaption>First Cat Show, Crystal Palace, 1871</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-3">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Beatrix_Potter_by_Charles_King%2C_1913.jpg/640px-Beatrix_Potter_by_Charles_King%2C_1913.jpg" alt="Beatrix Potter" loading="lazy">
+                        <figcaption>Beatrix Potter, creator of Tom Kitten</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-4">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Louis_Wain_-_Kittens.jpg/640px-Louis_Wain_-_Kittens.jpg" alt="Louis Wain cat illustration" loading="lazy">
+                        <figcaption>Louis Wain's famous cat illustrations</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="content-columns">
+                    <div class="content-column animate-fade-up delay-3">
+                        <h3>The First Cat Show</h3>
+                        <p>On July 13, 1871, Harrison Weir organized the world's first cat show at London's Crystal Palace. Over 200,000 visitors came to admire 170 cats. The modern concept of cat breeds was born.</p>
+                    </div>
+                    <div class="content-column animate-fade-up delay-4">
+                        <h3>Cats in Culture</h3>
+                        <p>Louis Wain's whimsical cat illustrations captured Victorian hearts. Beatrix Potter created Tom Kitten. Queen Victoria herself kept Persian cats, making them fashionable among the upper classes.</p>
+                    </div>
+                </div>
+                
+                <blockquote class="era-quote animate-fade-up delay-5">
+                    <p>"God made the cat to give man the pleasure of stroking a tiger."</p>
+                    <cite>— Victor Hugo</cite>
+                </blockquote>
+                
+                <div class="stat-row animate-fade-up delay-5">
+                    <div class="stat">
+                        <span class="stat-number">1871</span>
+                        <span class="stat-label">First official cat show</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">170</span>
+                        <span class="stat-label">Cats exhibited at Crystal Palace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 20th Century Section -->
+    <section id="twentieth" class="section era-section twentieth-section">
+        <div class="parallax-bg twentieth-bg"></div>
+        <div class="era-overlay twentieth-overlay"></div>
+        <div class="era-content">
+            <div class="era-header">
+                <span class="era-date animate-slide-left">1900 - 1999</span>
+                <h2 class="era-title animate-fade-up">The 20th Century</h2>
+                <p class="era-subtitle animate-fade-up delay-1">War, Media & Pop Culture</p>
+            </div>
+            
+            <div class="era-body">
+                <div class="content-block animate-fade-up delay-2">
+                    <p class="lead-text">Through two world wars and the rise of mass media, cats became cultural icons. Ship cats served in the Royal Navy, cartoon cats entertained millions, and by century's end, cats had become the world's most popular pet.</p>
+                </div>
+                
+                <div class="image-grid">
+                    <figure class="grid-image large animate-slide-up delay-2">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Unsinkable_Sam.jpg/800px-Unsinkable_Sam.jpg" alt="Unsinkable Sam, famous ship cat" loading="lazy">
+                        <figcaption>Unsinkable Sam, survived three ship sinkings in WWII</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-3">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/en/e/e8/Felix_the_Cat.svg" alt="Felix the Cat" loading="lazy">
+                        <figcaption>Felix the Cat, 1919</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-4">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/640px-Garfield_the_Cat.svg.png" alt="Garfield" loading="lazy">
+                        <figcaption>Garfield, debuted 1978</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="content-columns">
+                    <div class="content-column animate-fade-up delay-3">
+                        <h3>Cats at War</h3>
+                        <p>Ship cats served on vessels in both World Wars, controlling vermin and boosting morale. Simon of HMS Amethyst received the Dickin Medal for bravery. Unsinkable Sam survived three ship sinkings.</p>
+                    </div>
+                    <div class="content-column animate-fade-up delay-4">
+                        <h3>Cats in Media</h3>
+                        <p>Felix the Cat became one of the first animated stars in 1919. Tom and Jerry debuted in 1940. Garfield launched in 1978, becoming the world's most syndicated comic strip. Cats conquered entertainment.</p>
+                    </div>
+                </div>
+                
+                <blockquote class="era-quote animate-fade-up delay-5">
+                    <p>"In ancient times cats were worshipped as gods; they have not forgotten this."</p>
+                    <cite>— Terry Pratchett</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internet Age Section -->
+    <section id="internet" class="section era-section internet-section">
+        <div class="parallax-bg internet-bg"></div>
+        <div class="era-overlay internet-overlay"></div>
+        <div class="era-content">
+            <div class="era-header">
+                <span class="era-date animate-slide-left">2005 - Present</span>
+                <h2 class="era-title animate-fade-up">The Internet Age</h2>
+                <p class="era-subtitle animate-fade-up delay-1">Cats Conquer the Digital World</p>
+            </div>
+            
+            <div class="era-body">
+                <div class="content-block animate-fade-up delay-2">
+                    <p class="lead-text">The internet was made for cats. From LOLcats to Grumpy Cat, from Nyan Cat to countless viral videos, felines became the undisputed spirit animals of the digital age. They didn't just adapt to the internet—they conquered it.</p>
+                </div>
+                
+                <div class="image-grid">
+                    <figure class="grid-image large animate-slide-up delay-2">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Grumpy_Cat_by_Gage_Skidmore.jpg/1024px-Grumpy_Cat_by_Gage_Skidmore.jpg" alt="Grumpy Cat" loading="lazy">
+                        <figcaption>Grumpy Cat (2012-2019), internet legend</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-3">
+                        <img data-src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Nyan_cat_250px_frame.PNG/220px-Nyan_cat_250px_frame.PNG" alt="Nyan Cat" loading="lazy">
+                        <figcaption>Nyan Cat, 2011</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-4">
+                        <img data-src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=800" alt="Cat looking at camera" loading="lazy">
+                        <figcaption>The modern internet cat</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="content-columns">
+                    <div class="content-column animate-fade-up delay-3">
+                        <h3>The Rise of Cat Content</h3>
+                        <p>LOLcats emerged in 2007, spawning "I Can Has Cheezburger" and a new language of internet humor. YouTube's most-viewed videos often feature cats. Instagram cats have millions of followers.</p>
+                    </div>
+                    <div class="content-column animate-fade-up delay-4">
+                        <h3>Celebrity Cats</h3>
+                        <p>Grumpy Cat earned over $100 million. Lil Bub raised $700,000 for animal welfare. Keyboard Cat, Maru, and countless others became household names. Cats proved that the internet was their domain.</p>
+                    </div>
+                </div>
+                
+                <blockquote class="era-quote animate-fade-up delay-5">
+                    <p>"The internet is made of cats."</p>
+                    <cite>— Internet proverb</cite>
+                </blockquote>
+                
+                <div class="stat-row animate-fade-up delay-5">
+                    <div class="stat">
+                        <span class="stat-number">$100M+</span>
+                        <span class="stat-label">Grumpy Cat's lifetime earnings</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2B+</span>
+                        <span class="stat-label">Cat video views on YouTube</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today Section -->
+    <section id="today" class="section era-section today-section">
+        <div class="parallax-bg today-bg"></div>
+        <div class="era-overlay today-overlay"></div>
+        <div class="era-content">
+            <div class="era-header">
+                <span class="era-date animate-slide-left">Today & Forever</span>
+                <h2 class="era-title animate-fade-up">The Quiet Revolution</h2>
+                <p class="era-subtitle animate-fade-up delay-1">600 Million Strong</p>
+            </div>
+            
+            <div class="era-body">
+                <div class="content-block animate-fade-up delay-2">
+                    <p class="lead-text">Today, over 600 million domestic cats share our world. They've journeyed from the temples of Egypt to the screens in our pockets. Through worship and persecution, war and peace, they've remained by our side—mysterious, independent, and utterly irreplaceable.</p>
+                </div>
+                
+                <div class="image-grid">
+                    <figure class="grid-image large animate-slide-up delay-2">
+                        <img data-src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1200" alt="Beautiful cat portrait" loading="lazy">
+                        <figcaption>The modern companion</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-3">
+                        <img data-src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=800" alt="Cat in sunlight" loading="lazy">
+                        <figcaption>Moments of connection</figcaption>
+                    </figure>
+                    <figure class="grid-image animate-slide-up delay-4">
+                        <img data-src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=800" alt="Cat close-up" loading="lazy">
+                        <figcaption>Forever enigmatic</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="final-message animate-fade-up delay-3">
+                    <p>From divine guardians to internet celebrities, cats have walked beside humanity for ten thousand years. They've been worshipped and persecuted, feared and adored. Through it all, they've remained exactly what they've always been: independent spirits who choose to share their lives with us.</p>
+                    <p>Perhaps that's why we love them. In a world of constant change, cats remind us that some things endure. Their purrs still comfort us. Their mystery still captivates us. Their presence still makes a house feel like home.</p>
+                    <p class="closing-line">The story of cats and humans isn't over. It's still being written—one gentle headbutt, one midnight zoomie, one quiet moment of companionship at a time.</p>
+                </div>
+                
+                <div class="stat-row final-stats animate-fade-up delay-4">
+                    <div class="stat">
+                        <span class="stat-number">600M</span>
+                        <span class="stat-label">Domestic cats worldwide</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10,000</span>
+                        <span class="stat-label">Years of companionship</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Forever</span>
+                        <span class="stat-label">In our hearts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="credits animate-fade-up delay-5">
+            <p>Created with love for cats everywhere</p>
+            <p class="credit-links">Images from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>, <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a>, and <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></p>
+        </div>
+    </section>
+
+    <!-- Audio element for ambient sound -->
+    <audio id="ambient-audio" loop preload="none">
+        <source src="https://cdn.freesound.org/previews/531/531015_6142149-lq.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
